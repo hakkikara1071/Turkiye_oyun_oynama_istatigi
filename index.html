@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Türkiye Oyun İstatistikleri 2024</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Veri Analizi</p>
+        <h1>Türkiye Oyun İstatistikleri 2024</h1>
+        <p>
+          Türkiye'de yaş gruplarına göre oyun oynama alışkanlıkları, platform
+          tercihleri ve harcama eğilimleri tek bir sayfada.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="grid-section">
+        <article class="card card-intro">
+          <h2>Veri Kaynağı</h2>
+          <p>
+            Bu sayfada kullanılan veri, Türkiye'de farklı yaş gruplarının mobil,
+            PC ve konsol platformlarında oyun oynama süreleri, oyuncu oranı ve aylık harcama değerlerini içerir.
+          </p>
+        </article>
+
+        <article class="card card-stats">
+          <h2>Hızlı Bakış</h2>
+          <ul>
+            <li>En fazla günlük oyun süresi 19-24 yaş grubunda mobilde.</li>
+            <li>Konsol harcaması 25-34 yaş grubunda en yüksek.</li>
+            <li>Yaş ilerledikçe oyun süresi ve harcama genel olarak düşüyor.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="chart-section">
+        <div class="chart-card">
+          <div class="chart-header">
+            <h2>Platformlara Göre Oyun Süresi Radar Analizi</h2>
+            <p>Her yaş grubunda mobil, PC ve konsol için günlük ortalama oyun saatleri karşılaştırıldı.</p>
+          </div>
+          <div id="radarChart"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h2>Harcama Hiyerarşisi ve Oyun Süresi İlişkisi</h2>
+            <p>Platformlara ve yaş gruplarına göre ortalama aylık harcama dağılımı gösterildi.</p>
+          </div>
+          <div id="sunburstChart"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h2>3D Oyun Davranışı Analizi</h2>
+            <p>Günlük süre, haftalık süre ve harcama arasındaki ilişkiler platform bazında incelendi.</p>
+          </div>
+          <div id="scatter3DChart"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
